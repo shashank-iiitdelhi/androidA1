@@ -1,0 +1,44 @@
+# Flight Route Finder App
+
+## Description
+This Android application helps users find the shortest flight route between two selected cities. It displays the route, distance, visa requirements, and progress as the user reaches each stop. The app supports both kilometers and miles and uses Dijkstra's algorithm for shortest path calculation.
+
+## Features
+- Select a start and destination city from a list.
+- Find the shortest path between the selected cities.
+- View visa requirements for each leg of the journey.
+- Toggle between kilometers and miles.
+- Display progress with a progress bar and percentage.
+- View all stops in a RecyclerView.
+- Read stops and routes from text files.
+
+## Technologies Used
+- **Programming Language:** Kotlin
+- **Framework:** Android SDK
+- **UI Components:** RecyclerView, Spinner, ProgressBar, TextView, Button, ToggleButton
+- **Concurrency:** Kotlin Coroutines for background data loading
+
+## File Structure
+- `MainActivity.kt`: The main logic of the application.
+- `GraphFlight.kt`: Implements Dijkstra’s algorithm for finding the shortest path.
+- `Route.kt`: Data class representing a flight route.
+- `Stop.kt`: Data class representing a stop (city).
+- `stops.txt`: Contains a list of cities (stops).
+- `routes.txt`: Contains flight routes, distances, and visa requirements.
+
+## How It Works
+1. The app loads stops and routes from `stops.txt` and `routes.txt`.
+2. Users select start and end cities from dropdown lists.
+3. When the **Find Route** button is clicked, the shortest path is calculated using Dijkstra’s algorithm.
+4. The route, total distance, and visa requirements are displayed.
+5. Users can press **Next Stop** to progress through the journey, updating the progress bar.
+6. Distance can be toggled between kilometers and miles.
+
+## Usage
+- Select a start and destination city.
+- Click **Find Route** to calculate the shortest path.
+- Click **Next Stop** to progress through the journey.
+- Toggle the unit button to switch between kilometers and miles.
+
+
+
