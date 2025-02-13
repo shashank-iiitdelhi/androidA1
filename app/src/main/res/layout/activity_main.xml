@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ToggleButton
+        android:id="@+id/unit_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Miles"
+        android:textOff="Kilometers"
+        android:checked="false"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/start_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"/>
+
+    <Spinner
+        android:id="@+id/end_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0 km"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/distance_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance Left: 0 km"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+    <Button
+        android:id="@+id/next_stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Stop"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>  <!-- Initially hidden -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@android:color/darker_gray"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/purple" />
+
+        <!-- Percentage TextView (Overlayed) -->
+        <TextView
+            android:id="@+id/progress_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="0%"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/route_full_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Route will be displayed here"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/route_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route will be displayed here"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/find_route_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Shortest Route"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

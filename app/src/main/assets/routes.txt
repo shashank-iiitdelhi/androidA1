@@ -1,0 +1,54 @@
+Delhi, New York, No, 11760
+Delhi, Madrid, Yes, 7380
+Delhi, Dubai, No, 2200
+Delhi, Singapore, Yes, 4150
+Delhi, Tokyo, Yes, 6000
+New York, Madrid, No, 5760
+New York, Dubai, Yes, 11020
+New York, Los Angeles, No, 3940
+New York, Toronto, No, 550
+New York, Chicago, No, 1150
+Madrid, Dubai, Yes, 5660
+Madrid, Amsterdam, No, 1460
+Madrid, Manchester, No, 1740
+Madrid, Paris, No, 1300
+Dubai, Tampa, Yes, 12540
+Dubai, Singapore, No, 5850
+Dubai, Tokyo, Yes, 7900
+Dubai, Rome, Yes, 4800
+Dubai, Istanbul, No, 3000
+Tampa, Amsterdam, No, 7470
+Tampa, Los Angeles, No, 3550
+Tampa, Chicago, No, 1800
+Tampa, Toronto, No, 2100
+Amsterdam, Sydney, Yes, 16650
+Amsterdam, Paris, No, 500
+Amsterdam, Manchester, No, 500
+Singapore, Tokyo, No, 5300
+Singapore, Bangkok, No, 2000
+Singapore, Hong Kong, Yes, 2600
+Singapore, Beijing, Yes, 4500
+Tokyo, Los Angeles, Yes, 8800
+Tokyo, Seoul, No, 1150
+Tokyo, Beijing, No, 2100
+Los Angeles, Chicago, No, 2800
+Los Angeles, Toronto, No, 3500
+Los Angeles, Moscow, Yes, 9700
+Paris, Rome, No, 1100
+Paris, Istanbul, Yes, 2250
+Rome, Istanbul, No, 1400
+Rome, Moscow, Yes, 2400
+Hong Kong, Beijing, No, 2000
+Hong Kong, Seoul, No, 2100
+Beijing, Seoul, No, 950
+Beijing, Moscow, Yes, 5800
+Seoul, Moscow, Yes, 6600
+Seoul, Bangkok, No, 4600
+Istanbul, Moscow, No, 1800
+Istanbul, Bangkok, Yes, 7200
+Moscow, Bangkok, Yes, 7100
+Moscow, Toronto, Yes, 7500
+Moscow, Chicago, Yes, 8100
+Bangkok, Chicago, Yes, 13600
+Bangkok, Toronto, Yes, 13000
+Bangkok, Tampa, Yes, 15200
